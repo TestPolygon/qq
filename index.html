@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V</title>
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;            
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        button {
+            min-width: 9em;
+            min-height: 3em;
+            margin: 1em 0;
+        }
+    </style>
+
+    <script type="module">
+            const btn = document.querySelector("#v");
+            btn.addEventListener("click", event => {
+                window.navigator.vibrate([100,30,100,30,100,200,200,30,200,30,200,200,100,30,100,30,100]);
+            });
+    </script>
+</head>
+<body>
+    <button id="v">VVVVV</button>  
+</body>
+</html>
